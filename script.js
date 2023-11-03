@@ -58,7 +58,7 @@
 
     setTimeout(() => {
       document.getElementById('temperatureInput').value = '';
-    }, 2000);
+    }, 5000);
 
     
     }
