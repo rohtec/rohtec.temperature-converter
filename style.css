@@ -14,7 +14,7 @@ body {
 main {
     margin: auto;
     border: 8px solid #006680;
-    height: 65vh;
+    height: 70vh;
     width: 55%;
     border-top-right-radius: 35px;
     border-bottom-left-radius: 35px;
@@ -46,7 +46,7 @@ h1 {
     color: #006680;
     font-size: 25px;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     
 }
 label {
@@ -57,7 +57,7 @@ label {
    
 }
 .input-group{
-    margin: 10px 0 30px 0;
+    margin: 10px 0 20px 0;
     display: grid;
 }
 input {
