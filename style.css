@@ -83,6 +83,7 @@ select {
     border-top-right-radius: 5px;
     outline: none;
     width: 100% ;
+    background-color: transparent;
 }
  #targetUnit {
     width: 100%;
