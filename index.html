@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#006680" media="(prefers-color-scheme: dark)">
+    <title>A Simple Temperature Converter||with HTML,CSS and JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="shortcut icon"
+      href="./favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&amp;family=Fraunces:wght@700;900&amp;display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <main aria-label="container">
+        <section aria-label="input-section" class="cont1">
+              
+            <div class="input-container">
+                
+                <h1>Enter Temperature</h1>
+                <label for="temperatureInput">Degree</label>
+                <div class="input-group">
+                    <input tabindex ="0" type="number" class="form-control" id="temperatureInput" name="temperatureInput" placeholder="Enter Degree" value="0"/>
+                    <div class="input-group-append">
+                        <select tabindex ="1" id="originalUnit">
+                            <option value="celsius" >
+                                &deg;C
+                            </option>
+                            <option value="fahrenheit">&deg;F</option>
+                            <option value="kelvin">K</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="targetUnit">Convert In</label>
+                <div class="input-group">
+                    <div class="input-group-append">
+                        <select tabindex ="2" id="targetUnit">
+                        <option value="fahrenheit" >Fahrenheit (&deg;F)</option>
+                        <option value="celsius">Celsius (&deg;C)</option>
+                        <option value="kelvin">Kelvin (K)</option>
+                    </select></div>
+                </div>
+                <div class="submit-button">
+                <button  onclick ="convertTemperature()" class ="convertBtn" type="submit" tabindex="3"> Convert <span> &rightarrow;</span></button>
+                
+                </span>
+                </div>
+            
+            </div>
+        </section>
+        <section aria-label="result-section" class="cont2">
+          <div class="resultValueSection">
+            <div id="convertedDegree">
+                <h2 id="result">32</h2>
+                <div id ="targetUnitResult">&deg;F
+                </div>
+            </div>
+            
+          </div>  
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
